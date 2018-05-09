@@ -28,7 +28,7 @@ public class Car {
                System.out.println("Its time for the First service of the car!");
                
           } else{ 
-               System.out.println("If you dont get a service @ 8,000 miles you run the risk of damage");
+               System.out.println("If you dont get a service @ 8,000 miles you run the risk of damage, but you are good for now!");
            }// close else/if
            
            if(totalmilesdriven >= 30000 ){
