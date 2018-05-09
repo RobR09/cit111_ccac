@@ -5,11 +5,12 @@
  */
 package finalproject;
 
-import java.util.Scanner; 
+
+
 
 /**
  *
- * @author robert.randig
+ * @author Rob Randigs PC
  */
 public class Road {
     
@@ -23,10 +24,13 @@ public static void main (String[]args){
    car1.driveCar(10000); 
     
     
-    
-     Scanner scanner = new Scanner (System.in);
+    System.out.println(" Whats the make of the car again? " + car1.make );
+    System.out.println(" Whats the model of the car again? " + car1.model );
      
-     int CurrentTireTreadlife;    
+    System.out.println(" The current engine life for this car is: " + car1.getEngineLifepercent ( ) );
+    System.out.println(" The current tread life for this car is: " + car1.getTreadLifePercent());
+    
+     
     
     
     
@@ -36,4 +40,3 @@ public static void main (String[]args){
 
 
 }//close road 
-

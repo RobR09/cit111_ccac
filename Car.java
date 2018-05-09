@@ -5,28 +5,27 @@
  */
 package finalproject;
 
-
-
 /**
  *
- * @author robert.randig
+ * @author Rob Randigs PC
  */
 public class Car {
-     
-    public String make;
+    
+ public String make;
     public String model; 
      
     public int tripmiles; 
     private int totalmilesdriven; 
-    private int enginelifepercent  ; 
-    public int currenttiretreadlife; 
-    private int maxtreadlife;
+    public int enginelifepercent  ; 
+   public double currenttreadlife = 74; 
+   public double maxtreadlife = 100;
+    public double treadlifepercent;
     
     
       public void driveCar(int tripmiles){
           totalmilesdriven = tripmiles + totalmilesdriven; 
            if(totalmilesdriven >= 8000  ) { 
-               System.out.println("Its time for the First service of the car");
+               System.out.println("Its time for the First service of the car!");
                
           } else{ 
                System.out.println("If you dont get a service @ 8,000 miles you run the risk of damage");
@@ -44,16 +43,24 @@ public class Car {
       
       public int getEngineLifepercent ( ){
           enginelifepercent= 100- ((20000/10000)*15);
+          
           return enginelifepercent; 
           
+        
                   
           
           
       }//close getenginelifepercent
       
-      public int getTreadLifePercent (){
+      public double  getTreadLifePercent (){
       
-      }
+      treadlifepercent = currenttreadlife/maxtreadlife; 
+      
+      return  treadlifepercent;
+      
+      }//close gettreadlifepercent
+      
+      
           
           
           
